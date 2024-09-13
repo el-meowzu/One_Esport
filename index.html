@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <title>One Esport</title>
 </head>
+
 <body>
     <!-- Hero -->
     <section id="hero">
@@ -17,7 +18,7 @@
             <!-- Nav Start Here -->
             <nav class="nav flex items-center justify-between font-bold text-white">
                 <!-- Team Logo -->
-                <img src="img/team_logo_final.jpg" class="w-64 h-auto" alt="one logo">
+                <img src="asset/img/team_logo_final.jpg" class="w-64 h-auto" alt="one logo">
                 <!-- Menu -->
                 <div class="hidden h-10 font-alata md:flex md:space-x-8">
                     <div class="group">
@@ -42,12 +43,32 @@
                     <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                 </div>
                 <!-- Hamburger Button -->
+                 <div class="md:hidden">
+                    <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                 </div>
             </nav>
             <!-- Nav End -->
-                <!-- Mobile Menu -->
-                <div class="max-w-lg mt-32 mb-32 p-4 font-sans text-4xl text-white uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl">
-                    One Team One family 
-                </div>
+            <!-- Mobile Menu -->
+            <div id="menu" 
+                class= "absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40
+                pl-12 space-y-3 text-lg text-white uppercase bg-black" 
+            >
+                <a href="#" class="hover:text-indigo-500">About</a>
+                <a href="#" class="hover:text-indigo-500">Careers</a>
+                <a href="#" class="hover:text-indigo-500">Contact</a>
+                <a href="#" class="hover:text-indigo-500">Events</a>
+                <a href="#" class="hover:text-indigo-500">Products</a>
+                <a href="#" class="hover:text-indigo-500">Support</a>
+            </div>
+
+            <!-- Slogan -->
+            <div class="max-w-lg mt-32 mb-32 p-4 font-sans text-4xl text-white uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl">
+                One Team One family 
+            </div>
         </div>
     </section>
 
@@ -57,7 +78,7 @@
         <div 
             class= "relative container flex flex-col max-w-6xl mx-auto my-32 px-6 text-gray-900 md:flex-row md:px-0"
         >
-            <img src="img/one_model.webp" alt="girl pointing at camera background space invaders">
+            <img src="asset/img/one_model.webp" alt="girl pointing at camera background space invaders">
             <!-- Text Container -->
             <div 
                 class="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20"
@@ -86,33 +107,33 @@
                 <button class="hidden btn md:block">See All</button>
             </div>
 
-            <!-- Items Container -->
+            <!-- Items Container 1 -->
             <div class= "item-container">
                 <!-- Item 1 -->
                 <div class= "group item">
-                    <img src="img/competition.webp" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110">
+                    <img src="asset/img/competition.webp" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110">
                     <!-- Mobile Img -->
-                    <img src="img/competition.webp" alt="" class="w-full md:hidden">
+                    <img src="asset/mobile/competition.webp" alt="" class="w-full md:hidden">
                     <!-- Item Gradient -->
                     <div class="item-gradient"></div>
                     <!-- Item Text -->
-                    <h5> competition </h5>
+                    <h5> Events </h5>
                 </div>
                 <!-- Item 2 -->
                 <div class= "group item">
-                    <img src="img/mobile.webp" alt="" class="hidden w-full h-full duration-200 md:block group-hover:scale-110">
+                    <img src="asset/img/mobile.webp" alt="" class="hidden w-full h-full duration-200 md:block group-hover:scale-110">
                     <!-- Mobile Img -->
-                    <img src="img/mobile.webp" alt="" class="w-full md:hidden">
+                    <img src="asset/mobile/mobile.webp" alt="" class="w-full md:hidden">
                     <!-- Item Gradient -->
                     <div class="item-gradient"></div>
                     <!-- Item Text -->
-                    <h5> Meet our Mobile Team </h5>
+                    <h5> Pro Mobile Team </h5>
                 </div>
                 <!-- Item 3 -->
                 <div class= "group item">
-                    <img src="img/twitch.webp" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110">
+                    <img src="asset/img/twitch.webp" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110">
                     <!-- Mobile Img -->
-                    <img src="img/twitch.webp" alt="" class="w-full md:hidden">
+                    <img src="asset/mobile/twitch.webp" alt="" class="w-full md:hidden">
                     <!-- Item Gradient -->
                     <div class="item-gradient"></div>
                     <!-- Item Text -->
@@ -120,9 +141,9 @@
                 </div>
                 <!-- Item 4 -->
                 <div class= "group item">
-                    <img src="img/mouse.webp" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110">
+                    <img src="asset/img/mouse.webp" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110">
                     <!-- Mobile Img -->
-                    <img src="img/mouse.webp" alt="" class="w-full md:hidden">
+                    <img src="asset/mobile/mouse.webp" alt="" class="w-full md:hidden">
                     <!-- Item Gradient -->
                     <div class="item-gradient"></div>
                     <!-- Item Text -->
@@ -134,43 +155,43 @@
             <div class= "item-container mt-10">
                 <!-- Item 1 -->
                 <div class= "group item">
-                    <img src="img/competition.webp" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110">
+                    <img src="asset/img/desk.webp" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110">
                     <!-- Mobile Img -->
-                    <img src="img/competition.webp" alt="" class="w-full md:hidden">
+                    <img src="asset/mobile/desk.webp" alt="" class="w-full md:hidden">
                     <!-- Item Gradient -->
                     <div class="item-gradient"></div>
                     <!-- Item Text -->
-                    <h5> competition </h5>
+                    <h5> Oppurtunity </h5>
                 </div>
                 <!-- Item 2 -->
                 <div class= "group item">
-                    <img src="img/mobile.webp" alt="" class="hidden w-full h-full duration-200 md:block group-hover:scale-110">
+                    <img src="asset/img/Desktop.webp" alt="" class="hidden w-full h-full duration-200 md:block group-hover:scale-110">
                     <!-- Mobile Img -->
-                    <img src="img/mobile.webp" alt="" class="w-full md:hidden">
+                    <img src="asset/mobile/Desktop.webp" alt="" class="w-full md:hidden">
                     <!-- Item Gradient -->
                     <div class="item-gradient"></div>
                     <!-- Item Text -->
-                    <h5> Meet our Mobile Team </h5>
+                    <h5> News </h5>
                 </div>
                 <!-- Item 3 -->
                 <div class= "group item">
-                    <img src="img/twitch.webp" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110">
+                    <img src="asset/img/join.webp" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110">
                     <!-- Mobile Img -->
-                    <img src="img/twitch.webp" alt="" class="w-full md:hidden">
+                    <img src="asset/mobile/join.webp" alt="" class="w-full md:hidden">
                     <!-- Item Gradient -->
                     <div class="item-gradient"></div>
                     <!-- Item Text -->
-                    <h5> Meet Our Streamers </h5>
+                    <h5> Join the One Team </h5>
                 </div>
                 <!-- Item 4 -->
                 <div class= "group item">
-                    <img src="img/mouse.webp" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110">
+                    <img src="asset/img/gameboy.webp" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110">
                     <!-- Mobile Img -->
-                    <img src="img/mouse.webp" alt="" class="w-full md:hidden">
+                    <img src="asset/mobile/gameboy.webp" alt="" class="w-full md:hidden">
                     <!-- Item Gradient -->
                     <div class="item-gradient"></div>
                     <!-- Item Text -->
-                    <h5> Sponsor Us </h5>
+                    <h5> FAQ </h5>
                 </div>
             </div>
 
@@ -190,7 +211,7 @@
                 <div class="flex flex-col items-center space-y-8 md:items-start md:space-y-4">
                     <!-- Logo -->
                     <div>
-                        <img src="img/team_logo_final.jpg" alt="One Team Logo" class= "w-40 md:ml-3 "  >
+                        <img src="asset/img/team_logo_final.jpg" alt="One Team Logo" class= "w-40 md:ml-3 "  >
                     </div>
                     <!-- Menu Container -->
                     <div 
@@ -240,34 +261,35 @@
                         <!-- icons 1 -->
                         <div class="h-8 group">
                             <a href="#">
-                                <img src="img/logo/icon-twitter.svg" alt="">
+                                <img src="asset/logo/x.svg" alt="">
                             </a>
                         </div>
                         <!-- icons 2 -->
                         <div class="h-8 group">
                             <a href="#">
-                                <img src="img/logo/icon-pinterest.svg" alt="">
+                                <img src="asset/logo/icon-pinterest.svg" alt="">
                             </a>
                         </div>
                         <!-- icons 3 -->
                         <div class="h-8 group">
                             <a href="#">
-                                <img src="img/logo/icon-instagram.svg" alt="">
+                                <img src="asset/logo/icon-instagram.svg" alt="">
                             </a>
                         </div>
                         <!-- icons 4 -->
                         <div class="h-8 group">
                             <a href="#">
-                                <img src="img/logo/icon-facebook.svg" alt="">
+                                <img src="asset/logo/icon-facebook.svg" alt="">
                             </a>
                         </div>
                     </div>
                     <!-- Copyright -->
-                    &copy; 2024 One Esport Team. All Right Reserved
+                    &copy; 2024 One El Meowzu Team. All Right Reserved
                 </div>
             </div>
         </div>
     </footer>
 
+    <script src="js/app.js"></script>
 </body>
 </html>
