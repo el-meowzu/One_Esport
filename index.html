@@ -4,9 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <title>One Esport</title>
 </head>
 <body>
+    <!-- Hero -->
+    <section id="hero">
+        <!-- Hero Container -->
+        <div class="container max-w-6xl mx-auto px-6 py-12 md:px-0">
+            <!-- Nav Start Here -->
+            <nav class="nav flex items-center justify-between font-bold text-white">
+                <!-- Team Logo -->
+                <img src="img/team_logo_final.jpg" class="w-64 h-auto" alt="one logo">
+                <!-- Menu -->
+                <div class="hidden h-10 font-alata md:flex md:space-x-8">
+                    <div class="group">
+                        <a href="">About</a>
+                    </div>
+                    <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    <div class="group">
+                        <a href="">Careers</a>
+                    </div>
+                    <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    <div class="group">
+                        <a href="">Events</a>
+                    </div>
+                    <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    <div class="group">
+                        <a href="">Products</a>
+                    </div>
+                    <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    <div class="group">
+                        <a href="">Support</a>
+                    </div>
+                    <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                </div>
+                <!-- Hamburger Button -->
+            </nav>
+            <!-- Nav End -->
+                <!-- Mobile Menu -->
+                <div class="max-w-lg mt-32 mb-32 p-4 font-sans text-4xl text-white uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl">
+                    One Team One family 
+                </div>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section id="feature">
+        <!-- Feature Container -->
+        <div 
+            class= "relative container flex flex-col max-w-6xl mx-auto my-32 px-6 text-gray-900 md:flex-row md:px-0"
+        >
+            <img src="img/one_model.webp" alt="girl pointing at camera background space invaders">
+            <!-- Text Container -->
+            <div 
+                class="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20"
+            >
+                <h2 
+                    class="max-w-lg mt-10 mb-6 font-sans text-4xl text-center text-gray-900 uppercase md:text-5xl md:mt-0 md:text-left md:mx-auto"
+                >
+                    Upcoming E-Sport team 
+                </h2>
+                <p class="max-w-md text-center md:text-left">
+                    One Gaming Team is an upcoming esports team with a mission to make a mark in the competitive gaming world. Founded by a group of passionate and skilled gamers, One aims to combine talent, strategy, and innovation to compete at the highest levels across multiple gaming titles. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id= "Portfolio">
+        <!-- Portfolio container -->
+        <div class="container max-w-6xl mx-auto my-32 px-6 text-gray-900 md:px-0">
+            <!-- Portfolio header -->
+            <div class="flex justify-center mb-20 md:justify-between">
+                <h2 class="text-4xl text-center uppercase md:text-left md:text-5xl">
+                    Our Portfolio
+                </h2>
+                <button class="hidden btn md:block">See All</button>
+            </div>
+
+            <!-- Items Container -->
+            <div 
+                class= "flex flex-col justify-between w-full space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8"
+            >
+                <!-- Item 1 -->
+                <div class= "group relative overflow-hidden md:w-1/4">
+                    <img src="img/competition.webp" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110">
+                    <!-- Mobile Img -->
+                    <img src="img/competition.webp" alt="" class="w-full md:hidden">
+                    <!-- Item Gradient -->
+                    <div
+                        class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+                    ></div>
+                    <!-- Item Text -->
+                    <h5 
+                        class= "absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black"
+                    > competition
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
 
 </body>
 </html>
